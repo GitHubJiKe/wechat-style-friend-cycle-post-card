@@ -1,0 +1,146 @@
+#root {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.bg {
+    width: 30rem;
+    height: 20rem;
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* border-top-left-radius: 0.2rem;
+    border-top-right-radius: 0.2rem; */
+}
+
+.bg .userInfo {
+    position: absolute;
+    bottom: -1rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    z-index: 999;
+}
+
+.bg .userInfo .avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.4rem;
+    background-position: center 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg .userInfo .username {
+    color: #fff;
+}
+
+.timeline {
+    position: relative;
+    padding: 2rem 1rem;
+    width: 28rem;
+    background-color: #1e1d1d;
+    color: #fff;
+}
+
+.timeline .userInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.timeline .userInfo .avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.3rem;
+    background-position: center 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.timeline .userInfo .username {
+    color: #5181c8;
+}
+
+.timeline .quote {
+    padding: 0 1rem;
+}
+
+.timeline .quote .pics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+.timeline .quote .pic-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.timeline .quote .pics .pic {
+    width: 100%;
+    height: 13rem;
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 1rem;
+    border-radius: 0.2rem;
+}
+.timeline .quote .pic-1 .pic {
+    width: 100%;
+    height: 13rem;
+    background-position: 100% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 1rem;
+    border-radius: 0.2rem;
+}
+.timeline .thumbUp {
+    height: 4rem;
+    background-color: #242827;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    margin-top: 2rem;
+}
+
+.timeline .thumbUp .item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+.timeline .thumbUp .item img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+}
+
+.downlaod {
+}
+
+.form {
+    margin-top: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 24rem;
+    margin-bottom: 0.4rem;
+}
+
+.form::after {
+    content: "@peteryuan";
+    color: #969696;
+    font-size: smaller;
+    text-align: center;
+}
